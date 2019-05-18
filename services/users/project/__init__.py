@@ -16,7 +16,7 @@ def create_app(script_info=None):
     # set config
     app_settings = os.getenv('APP_SETTINGS')
     app.config.from_object(app_settings)
-    #print(app.config, file=sys.stderr)
+    # print(app.config, file=sys.stderr)
 
     # set up extensions
     db.init_app(app)
@@ -31,5 +31,3 @@ def create_app(script_info=None):
         return {'app': app, 'db': db}
 
     return app
-
-

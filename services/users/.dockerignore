@@ -2,3 +2,4 @@
 .dockerignore
 Dockerfile
 Dockerfile-prod
+services/users/htmlcov/index.html
