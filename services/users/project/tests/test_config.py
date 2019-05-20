@@ -6,10 +6,10 @@ import unittest
 
 from flask import current_app
 from flask_testing import TestCase
-
 from project import create_app
 
 app = create_app()
+
 
 class TestDevelopmentConfig(TestCase):
     def create_app(self):
@@ -40,6 +40,7 @@ class TestTestingConfig(TestCase):
             os.environ.get('DATABASE_TEST_URL')
         )
         self.assertFalse(app.config['DEBUG_TB_ENABLED'])
+
 
 class TestProductionConfig(TestCase):
     def create_app(self):

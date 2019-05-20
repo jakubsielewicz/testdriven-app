@@ -12,7 +12,8 @@ from flask_cors import CORS
 # instantiate the extensions
 db = SQLAlchemy()
 toolbar = DebugToolbarExtension()
-cors = CORS() 
+cors = CORS()
+
 
 def create_app(script_info=None):
 
